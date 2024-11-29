@@ -1,0 +1,15 @@
+﻿<div class="checkbox-item-container @(_itemStateName)-checkbox-item">
+    <img width="64px" height="64px" @onclick="SwitchState" src="icons/agents/Omen_icon.webp" alt="Checkbox group item"/>
+</div>
+
+
+@code {
+    private string _itemStateName = "inactive";
+    private bool _isActive = false;
+
+    private void SwitchState()
+    {
+        _isActive = !_isActive;
+        _itemStateName = _isActive ? "active" : "inactive";
+    }
+}

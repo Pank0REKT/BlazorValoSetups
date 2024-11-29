@@ -1,0 +1,16 @@
+﻿.checkbox-item-container{
+    width: 64px;
+    height: 64px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active-checkbox-item{
+    outline: 1px dashed black;
+}
+
+.inactive-checkbox-item{
+    outline: 0;
+}

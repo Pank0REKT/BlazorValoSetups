@@ -1,0 +1,11 @@
+﻿<div class="checkbox-group-container">
+    @foreach (var item in Items)
+    {
+        <CheckboxGroupItem></CheckboxGroupItem>
+    }
+</div>
+
+@code {
+    [Parameter] 
+    public IEnumerable<int> Items { get; set; }
+}
